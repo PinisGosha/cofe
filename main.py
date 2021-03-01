@@ -7,7 +7,7 @@ import sqlite3
 class Example(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('coffee.ui', self)
+        uic.loadUi('main.ui', self)
         self.con = sqlite3.connect('coffee.db')
 
         cur = self.con.cursor()
